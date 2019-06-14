@@ -21,6 +21,13 @@
       P {
         -webkit-margin-before: 0em;
         -webkit-margin-after: 0em;
+        &:before{
+          content: "\f10d";
+          font-family: "Font Awesome 5 Pro";
+          font-size: 1.5rem;
+          font-weight: 900;
+          color: $orange;
+        }
       }
     }
     .talk-bubble {
