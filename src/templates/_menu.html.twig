@@ -1,0 +1,28 @@
+{# <header class="header">
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fas fa-bars"></i>
+  </a>
+	<h1 class="logo"><a href="#">Company Logo</a></h1>
+	<div class="topnav" id="myTopnav">
+    <ul class="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+		{% include "_button.html.twig" %}
+    </ul>
+   </div>
+</header> #}
+
+<header class="header">
+{# 	<a href="#" class="logo"><img src="logo1.png"></a>#}
+<h1><a href="#" class="logo">Company Logo</a></h1>
+<a class="toggle-menu"><i class="fas fa-bars"></i></a>
+	<ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    {% include "_button.html.twig" %}
+	</ul>
+</header>

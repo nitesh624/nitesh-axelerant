@@ -1,0 +1,26 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  background: #232323;
+  color: $light;
+  ul.social-icons {
+    float: right;
+    @include for-phone-only {
+      float: left;
+      padding: 0;
+    }
+    li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 0 1rem 0 0;
+      font-size: 2rem;
+      a {
+        text-decoration: none;
+        color: $light;
+      }
+    }
+  }
+  .copyright {
+    margin: 1em 0;
+  }
+}

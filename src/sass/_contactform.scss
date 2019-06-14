@@ -1,0 +1,64 @@
+.contact-wrapper {
+  background-image: url('img/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  .inner {
+    margin: 0 auto;
+    width: 60rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .form-label {
+      text-align: center;
+      color: $light;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-weight: $normal;
+      }
+    }
+    form {
+      input[type='text'],
+      input[type='email'],
+      input[type='tel'] {
+        background: $light;
+        width: 100%;
+        padding: 10px;
+      }
+      textarea {
+        width: 100%;
+      }
+      ul.actions {
+        cursor: default;
+        list-style: none;
+        text-align: center;
+        li {
+          display: inline-block;
+          padding: 0 1em 0 0;
+          vertical-align: middle;
+          input[type='submit'] {
+            background-color: $orange;
+            color: #ffffff !important;
+            padding: 10px 30px;
+            border: transparent;
+            border-radius: 20px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .wrapper {
+//     padding: 4rem 0 4rem 0;
+//     @include for-phone-only {
+//       padding: 2rem 0 0.1rem 0;
+//     }
+//     @include for-tablet-portait-only {
+//       padding: 2rem 0 1rem 0;
+//     }
+//     @include for-tablet-landscape-only {
+//       padding: 4rem 0 2rem 0;
+//     }
+//   }

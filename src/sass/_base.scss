@@ -1,0 +1,20 @@
+// _base.scss
+// ==============
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: $mainFont;
+  background: $backgroundColor;
+  color: $defaultFontColor;
+}
+
+strong {
+  font-weight: $bold;
+}
+
+p {
+  font-weight: $thin;
+  padding-bottom: 10px;
+}

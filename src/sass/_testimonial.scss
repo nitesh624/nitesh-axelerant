@@ -1,0 +1,42 @@
+.testimonial-wrap {
+  background: #f5f5f5;
+  h1 {
+    font-weight: $normal;
+    text-align: center;
+  }
+  .testimonials {
+    .content {
+      background: #ffffff;
+      box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
+      border-radius: 20px;
+      padding: 1rem;
+    }
+    .author {
+      display: flex;
+      align-items: center;
+      padding-top: 1rem;
+      @include for-phone-only {
+        padding-top: 0;
+      }
+      .image {
+        margin-right: 2rem;
+        width: 10%;
+        @include for-phone-only {
+          width: 15%;
+          margin-right: 1rem;
+        }
+        img {
+          border-radius: 100%;
+          max-width: 100%;
+        }
+      }
+      p.credit {
+        text-transform: uppercase;
+        span {
+          display: block;
+          text-transform: none;
+        }
+      }
+    }
+  }
+}
