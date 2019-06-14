@@ -1,5 +1,8 @@
 .about-text {
   h1 {
     font-weight: $normal;
+    @include for-phone-only {
+      font-size: 1.5em;
+    }
   }
 }
