@@ -2,15 +2,15 @@
   background-image: url('../img/banner_bg.jpg');
   background-size: cover;
   background-position: center;
-  height: 70%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
   h1 {
     color: $light;
     text-align: center;
-    padding-top: 0.5em;
     margin: 0;
-    @include for-tablet-portrait-up {
-      padding-top: 3em;
-    }
   }
   .service-box-wrap {
     display: flex;
@@ -64,7 +64,11 @@
       padding: 15px 30px;
     }
     @include for-tablet-portrait-up {
-      height: 200px;
+      // height: 200px;
     }
+  }
+  @include for-phone-only {
+    height : 80%;
+    grid-template-columns: 1fr;
   }
 }
